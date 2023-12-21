@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import HomeButtonComponent from '../components/home-button/home-button';
 
 @Component({
   selector: 'app-test',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, HomeButtonComponent],
   template: `
 
-<div class="card">
-      <button type="button" [routerLink]="['/']" >GOTO HOME</button>
-    </div>
+    <app-home-button></app-home-button>
 
 <h2>Page</h2>
     <h4>TEST</h4>

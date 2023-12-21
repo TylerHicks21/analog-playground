@@ -12,7 +12,11 @@ import { RouterOutlet } from '@angular/router';
 
 
     <div class="card">
-      <button type="button" (click)="increment()">Count {{ count }}</button>
+      <button type="button" (click)="increment()">Count++</button>
+    </div>
+
+    <div class="card">
+      <button >Count = {{ count }}</button>
     </div>
 
     <div class="card">
